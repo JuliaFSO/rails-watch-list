@@ -2,11 +2,13 @@
 <div class="container">
 
 <h1>Watch Movies Lists</h1>
-  <ul>
+<div class="cards">
     <% @lists.each do |list| %>
-    <li><%= link_to  list.name, list_path(list) %></li>
+     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), cl_image_path(list.photo.key)">
+    <%= link_to  list.name, list_path(list) %>
+   </div>
     <% end %>
-  </ul>
-<br>
+</div>
+
 
 </div>

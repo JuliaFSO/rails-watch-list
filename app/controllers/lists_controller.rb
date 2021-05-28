@@ -26,7 +26,7 @@ class ListsController < ApplicationController
     private
     # Use callbacks to share common setup or constraints between actions.
     def list_params
-      params.require(:list).permit(:name)
+      params.require(:list).permit(:name, :photo)
     end
 
 end
